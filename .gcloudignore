@@ -1,0 +1,29 @@
+# Deploy only the required App Engine files/folders
+
+# Ignore everything first
+*
+
+# Keep required root files
+!app.yaml
+!raschcatpcm.py
+!README.txt
+!replay_bundle.zip
+!requirements.txt
+!response_category.csv
+
+# Keep picture folder and all PNG files inside it
+!pic/
+!pic/**
+
+# Still ignore common unnecessary files
+.git/
+.gitignore
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+env/
+.venv/
+.DS_Store
+Thumbs.db
